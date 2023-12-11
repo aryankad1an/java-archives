@@ -31,5 +31,12 @@ public class module03 {
         byte ba = 30;
         int result = ab*ba; // converted to int automatically lol
         System.out.println(result);
+
+        // -----------------------------------------
+        // operators
+        // -----------------------------------------
+
+        // similar to C++ lol, no need to redo
+
     }
 }
