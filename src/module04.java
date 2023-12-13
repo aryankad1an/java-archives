@@ -1,3 +1,9 @@
+class Calculator{
+    public int add(int num1, int num2){
+        return num1 + num2;
+    }
+}
+
 public class module04 {
     public static void main(String[] args){
         /*
@@ -17,6 +23,12 @@ public class module04 {
             default -> "7am";
         };
 
-        
+        /*
+        Object Oriented Programming
+         */
+
+        Calculator calculator_object = new Calculator(); // a way to create object out of its blueprint(class)
+        int res = calculator_object.add(4,5);
+        System.out.println(res);
     }
 }
