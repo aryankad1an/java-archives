@@ -27,7 +27,7 @@ public class module04 {
         Object Oriented Programming
          */
 
-        Calculator calculator_object = new Calculator(); // a way to create object out of its blueprint(class)
+        Calculator calculator_object = new Calculator(); // a way to create reference variable(not object) referencing to its blueprint(class)
         int res = calculator_object.add(4,5);
         System.out.println(res);
     }
