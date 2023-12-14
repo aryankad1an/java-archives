@@ -44,5 +44,27 @@ public class module09 {
         // when the string is modified, the original value is not changed
         // but the reference is shifted from one place to a new object
         System.out.println(name);
+
+
+
+
+
+
+        // WORKING WITH STRING BUFFERS(similar to STRING BUILDER)
+
+        StringBuffer sb = new StringBuffer("Aryan");
+        System.out.println(sb.capacity()); // output: 5+16=21
+        // it gives u extra 16 space
+
+        System.out.println(sb.length()); // note that length is different from capacity
+
+
+        System.out.println(sb);
+        sb.append(" Kadian");
+        System.out.println(sb);
+
+       // sb = "ok"; // <-- gives an error as "ok" is type string and sb is type StringBuffer :/
+
+
     }
 }
