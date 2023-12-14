@@ -15,10 +15,31 @@ public class module08 {
         System.out.println(_nums_2[0]);
 
         // multi dimentional arrays
-        int[][] _multi = new int[3][4];
+        int[][][] _multi = new int[3][4][5];
         // operations similar to C++
 
 
+        // jagged array(2D arrays with unequal array's)
+        int[][] nums = new int[3][];
+        nums[0] = new int[3];
+        nums[1] = new int[4];
+        nums[2] = new int[6];
+        // here above we can see the unequal length of arrays
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i].length; j++) {
+                nums[i][j] = (int)(Math.random()*10);
+                // randomly values are assigned
+            }
+        }
+        // accessing via for-each loop
+        for(int[] i : nums){
+            for(int j: i){
+                System.out.print(j);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
 
     }
 }
