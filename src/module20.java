@@ -11,5 +11,14 @@ public class module20 {
         // private variables/methods cant be accessed from anywhere except the same class
         // protected can be used in same package any class or in different package child-class
 
+
+        // polymorphism: it means many behaviors
+
+        // it is of two types: compiletime(method overloading) and runtime(method overriding)
+        // polymorphism at compile time is method overloading
+        // polymorphism at run time is method overriding (common sense)
+
+
     }
 }
+
