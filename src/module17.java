@@ -23,6 +23,17 @@ class ScientificCalc extends SuperCalc{
         System.out.println("This is scientific calculator");
     }
 }
+
+class Graphs{
+    public void print(){
+        System.out.println("Showing a graph");
+        System.out.println("___________/--------\\_____");
+        System.out.println("A graph printed.");
+    }
+}
+
+// multiple inheritance not allowed in Java :(
+// class MobileApplicationCalculator extends ScientificCalc, Graphs{ }
 public class module17 {
     public static void main(String[] args) {
         /*
