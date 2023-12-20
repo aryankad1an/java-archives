@@ -33,6 +33,7 @@ class Graphs{
 }
 
 // multiple inheritance not allowed in Java :(
+// to remove ambiguity
 // class MobileApplicationCalculator extends ScientificCalc, Graphs{ }
 public class module17 {
     public static void main(String[] args) {
