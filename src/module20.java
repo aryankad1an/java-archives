@@ -40,7 +40,7 @@ public class module20 {
         obj.show();
         obj2.show(); // this is in grade as reference is to grade
 
-        obj = new Grades(); // object reference reassigned
+        obj = new Grades(); // object reference reassigned(only works for child objects)
         obj.show();
 
         // what obj.show will show is decided on runtime, thats why its runtime polymorphism
