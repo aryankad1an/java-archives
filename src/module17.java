@@ -17,6 +17,12 @@ class SuperCalc extends Calc{
     }
 }
 
+// multilevel inheritance
+class ScientificCalc extends SuperCalc{
+    public void show(){
+        System.out.println("This is scientific calculator");
+    }
+}
 public class module17 {
     public static void main(String[] args) {
         /*
@@ -33,5 +39,11 @@ public class module17 {
         System.out.println(s1.div(81, 9));
         System.out.println(s1.add(81, 9)); // these methods work :)
         System.out.println(s1.sub(81, 9));
+
+        // multilevel inheritance
+        ScientificCalc s2 = new ScientificCalc();
+        s2.show();
+        System.out.println(s2.add(4, 4)); // this works
+        System.out.println(s2.div(4, 4)); // this works too
     }
 }
