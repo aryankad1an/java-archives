@@ -15,10 +15,12 @@ public class module29 {
             int i = 0;
             int j = 18/i;
             System.out.println(j);
+        } // multiple catches with one try
+        catch(ArithmeticException arit){
+            System.out.println("Something went arithmetically wrong=> "+arit);
         }
         catch (Exception err){
-            System.out.println("Something went wrong");
-            System.out.println("The error is: "+err);
+            System.out.println("idk what went wrong");
         }
 
 
