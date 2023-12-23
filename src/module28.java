@@ -1,12 +1,13 @@
 @FunctionalInterface
 interface I1{
-    void show(int i);
+    int show(int i);
     // functional interfaces are those interfaces with only one function
 }
 class A1 implements I1{
-    public void show(int i){
+    public int show(int i){
         System.out.println("In show");
         System.out.println(i);
+        return i+1;
     }
 }
 
@@ -19,7 +20,8 @@ public class module28 {
         I1 obj = (i) -> {
             System.out.println("in show(lambda way)");
             System.out.println(i);
+            return i+1;
         };
-        obj.show(70);
+        System.out.println(obj.show(70));
     }
 }
