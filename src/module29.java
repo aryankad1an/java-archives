@@ -29,5 +29,18 @@ public class module29 {
         Top: Object -> Throwable -> Error -> ThreadDeath or Io Error or {Virtual Machine Error(->out of memory)}
          */
 
+        System.out.println("------------");
+        // throw keyword
+        try{
+            int i = 0;
+            if(i==0){
+                throw new ArithmeticException("I dont want value to be 0"); // throwing an error
+                // we customized the exception
+            }
+        }
+        catch(ArithmeticException e){
+            System.out.println(e);
+        }
+
     }
 }
