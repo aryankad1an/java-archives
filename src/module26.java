@@ -1,6 +1,18 @@
 enum Status{
     Running, Failed, Pending, Success;
 }
+
+enum Laptp{
+    Macbook(2000), XPS(2200), Surface(1500), ThinkPad(1800);
+    private Laptp(int price){
+        this.price = price;
+    }
+    private int price; // instance variable
+
+    public int getPrice() {
+        return price;
+    }
+}
 public class module26 {
     public static void main(String[] args) {
 
@@ -24,6 +36,11 @@ public class module26 {
             case Pending -> System.out.println("Please Wait");
             default -> System.out.println("meh");
         }
+
+        // enum class in Java
+        // every enum in java extends enum class
+        Laptp lap = Laptp.Macbook;
+        System.out.println(lap.getPrice());
 
     }
 }
