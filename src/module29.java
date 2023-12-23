@@ -1,3 +1,10 @@
+// custom exception class
+class AryanException extends Exception{
+    public AryanException(String str){
+        super(str);
+    }
+}
+
 public class module29 {
     public static void main(String[] args) {
         // marker interface
@@ -39,6 +46,18 @@ public class module29 {
             }
         }
         catch(ArithmeticException e){
+            System.out.println(e);
+        }
+
+        System.out.println("------------");
+        // custom exception
+        try{
+            int i = 0;
+            if(i==0){
+                throw new AryanException("Aryan Disapproves");
+            }
+        }
+        catch(AryanException e){
             System.out.println(e);
         }
 
