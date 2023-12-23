@@ -10,6 +10,20 @@ class BB extends AA{
     }
 }
 
+abstract class Car{
+    public abstract void drive(); // giving an idea that this method can be executed in child class
+    public void playMusic(){
+        System.out.println("dingdingdingding");
+    }
+}
+
+class WagonR extends Car{
+    // defining drive is compulsory as its abstract method
+    public void drive(){
+        System.out.println("vroom vroom!");
+    }
+}
+
 public class module23 {
     public static void main(String[] args) {
         AA obj = (AA) new BB(); // upcasting as we are typecasting it to a parent class
@@ -31,5 +45,11 @@ public class module23 {
         String str = "12";
         int str_num = Integer.parseInt(str); // converting string to int
         System.out.println(str_num+1);
+
+
+        // abstract keyword
+        WagonR c = new WagonR();
+        c.drive();
+        c.playMusic();
     }
 }
