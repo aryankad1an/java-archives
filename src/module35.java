@@ -53,9 +53,13 @@ public class module35 {
         System.out.println();
 
         Stream<Integer> s4 = nums.stream();
-        Stream<Integer> s5 = s4.map(n -> n*2); // doubled every value in stream s5
+        Stream<Integer> s5 = s4.map(n -> n*2).sorted(); // doubled every value in stream s4 and sorts it
         s5.forEach(n -> System.out.print(n+" "));
         System.out.println();
+
+
+        // Reduce method
+        // do urself if u see(can refer to javascript)
 
     }
 }
