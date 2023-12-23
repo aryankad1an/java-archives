@@ -1,7 +1,5 @@
 import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public class module34 {
     public static void main(String[] args) {
@@ -29,6 +27,15 @@ public class module34 {
         nums2.add(14);
         // accessing via index
         System.out.println(nums2.get(2));
+
+        System.out.println("-----");
+
+        // Set: Collection with only unique values without any order in mind
+        Set<Integer> nums3 = new HashSet<Integer>(); // use TreeSet instead of HashSet to get sorted value
+        nums3.add(4);
+        nums3.add(8);
+        nums3.add(2);
+        System.out.println(nums3);
     }
 
 }
