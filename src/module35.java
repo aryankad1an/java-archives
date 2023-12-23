@@ -29,5 +29,14 @@ public class module35 {
         Collections.sort(nums, com);
         System.out.println(nums);
 
+        List<Integer> nums2 = new ArrayList<Integer>();
+        nums2.add(54);
+        nums2.add(57);
+        nums2.add(41);
+        nums2.add(14);
+
+        // lambda with for each
+        nums2.forEach(n -> System.out.println(n));
+
     }
 }
