@@ -30,5 +30,15 @@ public class module24 {
         Mouse.StaticInnerClass c = new Mouse.StaticInnerClass();
         c.show();
 
+
+        // anonymous inner class
+        Mouse mice2 = new Mouse(){
+            public void show(){
+                System.out.println("In new show");
+                System.out.println("YAY I just updated the show method");
+            }
+        };
+        // this is called an anonymous(no name) inner class
+        mice2.show();
     }
 }
