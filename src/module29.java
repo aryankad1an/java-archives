@@ -10,6 +10,17 @@ public class module29 {
         // 3. Logical Error: Human's skill issue in making logic :/ (hardest to solve)
 
         // Try and Catch method of handling exceptions
+        try
+        {
+            int i = 0;
+            int j = 18/i;
+            System.out.println(j);
+        }
+        catch (Exception err){
+            System.out.println("Something went wrong");
+            System.out.println("The error is: "+err);
+        }
+
 
 
     }
