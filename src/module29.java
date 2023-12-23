@@ -23,7 +23,11 @@ public class module29 {
             System.out.println("idk what went wrong");
         }
 
-
+        // exception hierarchy(ies):
+        /*
+        Top: Object -> Throwable -> Exception -> {Runtime Exceptions->(Many Diff Exceptions..)} or SQL Exceptions or IO Exception
+        Top: Object -> Throwable -> Error -> ThreadDeath or Io Error or {Virtual Machine Error(->out of memory)}
+         */
 
     }
 }
