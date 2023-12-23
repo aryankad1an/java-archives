@@ -19,5 +19,17 @@ public class module23 {
         obj.show1();
         obj1.show2();
 
+
+        // Wrapper Class in Java
+        // we have a class for every primitive data type in java
+
+        Integer num1 = 6; // autoboxing (assigning an int value to Integer class)
+        System.out.println(num1.intValue());  // unboxing
+        System.out.println(num1);
+
+
+        String str = "12";
+        int str_num = Integer.parseInt(str); // converting string to int
+        System.out.println(str_num+1);
     }
 }
