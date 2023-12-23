@@ -36,6 +36,16 @@ public class module34 {
         nums3.add(8);
         nums3.add(2);
         System.out.println(nums3);
+
+        // maps: key value pairs
+
+        Map<String, Integer> student_marks = new HashMap<String, Integer>();
+        student_marks.put("Aryan", 90);
+        student_marks.put("Naveen", 56);
+
+        System.out.println(student_marks);
+        System.out.println(student_marks.get("Aryan"));
+
     }
 
 }
