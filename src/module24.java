@@ -16,6 +16,9 @@ class Mouse{
     }
 }
 
+abstract class BlueprintOfChatbot{
+    public abstract void greet();
+}
 
 public class module24 {
     public static void main(String[] args) {
@@ -40,5 +43,13 @@ public class module24 {
         };
         // this is called an anonymous(no name) inner class
         mice2.show();
+
+        // abstract with anonymous
+        BlueprintOfChatbot gpt6_9 = new BlueprintOfChatbot() {
+            public void greet() {
+                System.out.println("Hi There, gpt model 6.9 here");
+            }
+        };
+        gpt6_9.greet();
     }
 }
