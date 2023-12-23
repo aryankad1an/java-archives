@@ -17,5 +17,13 @@ public class module26 {
             System.out.println(s);
         }
 
+        // switch case with enums
+
+        switch (isRunning) {
+            case Running -> System.out.println("All good");
+            case Pending -> System.out.println("Please Wait");
+            default -> System.out.println("meh");
+        }
+
     }
 }
